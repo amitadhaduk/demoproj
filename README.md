@@ -32,3 +32,5 @@ we can use standerd ejs syntex
 
 ## app.scss
 this file includes bootstrap directly from node_modules
+
+Test Push from AMita
