@@ -5,10 +5,11 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 // @import "cover";
-@import "header";
+@import "include/header.scss";
+@import "include/footer.scss";
+
 @import "index";
 @import "font-awesome";
 @import "about";
 @import "datatable";
 @import "contact-us";
-@import"footer";

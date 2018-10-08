@@ -1,6 +1,6 @@
 footer {
     background: $gray-100;
-    .footerlogo {
+    .ri-footerlogo {
         text-align: center;
         @include media-breakpoint-up(md) {
             text-align: left;
@@ -10,9 +10,13 @@ footer {
             width: 73px;
         }
     }
-    .socialicon {
+    .ri-socialicon {
         justify-content: center;
         display: flex;
+        @include media-breakpoint-up(md) {
+            justify-content: flex-end;
+            padding-top: 0px;
+        }
         ul {
             padding-top: 30px;
             @include media-breakpoint-up(md) {
@@ -28,9 +32,6 @@ footer {
                 }
             }
         }
-        @include media-breakpoint-up(md) {
-            justify-content: flex-end;
-            padding-top: 0px;
-        }
+
     }
 }

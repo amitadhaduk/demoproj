@@ -1,5 +1,5 @@
 #lms-page-index {
-    background: url('../img/banner-img.png');
+
     p {
         font-size: 14px;
         //576
@@ -22,27 +22,4 @@
         //     background-color: $primary;
         // }
     }
-}
-
-.hd-title {
-    width: 100%;
-    h3 {
-        width: 100%;
-        font-size: 35px;
-        padding: 25px 0px;
-    }
-}
-
-.animated-box {
-    width: 100%;
-    padding: 50px 30px;
-    margin: 0px 0px 40px 0px;
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow: 3px 3px 5px 6px #ccc;
-}
-
-.sweetalert {
-    width: 100%;
-    text-align: center;
 }
