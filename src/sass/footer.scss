@@ -1,0 +1,36 @@
+footer {
+    background: $gray-100;
+    .footerlogo {
+        text-align: center;
+        @include media-breakpoint-up(md) {
+            text-align: left;
+        }
+        img {
+            height: 27px;
+            width: 73px;
+        }
+    }
+    .socialicon {
+        justify-content: center;
+        display: flex;
+        ul {
+            padding-top: 30px;
+            @include media-breakpoint-up(md) {
+                text-align: left;
+                padding-top: 0px;
+            }
+            li {
+                display: inline-block;
+                vertical-align: top;
+                a {
+                    padding: 0px 10px;
+                    img {}
+                }
+            }
+        }
+        @include media-breakpoint-up(md) {
+            justify-content: flex-end;
+            padding-top: 0px;
+        }
+    }
+}

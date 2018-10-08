@@ -1,5 +1,5 @@
 #lms-page-index {
-    background: url('../img/bannerbg.png');
+    background: url('../img/banner-img.png');
     p {
         font-size: 14px;
         //576
@@ -18,33 +18,31 @@
         @include media-breakpoint-up(xl) {
             font-size: 18px;
         }
-
         // span {
         //     background-color: $primary;
         // }
     }
 }
 
-
-.hd-title{
+.hd-title {
     width: 100%;
-    h3{
+    h3 {
         width: 100%;
         font-size: 35px;
         padding: 25px 0px;
     }
 }
 
-.animated-box{
+.animated-box {
     width: 100%;
-    padding: 50px  30px;
+    padding: 50px 30px;
     margin: 0px 0px 40px 0px;
-    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
-.sweetalert{
+.sweetalert {
     width: 100%;
     text-align: center;
 }
