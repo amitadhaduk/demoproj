@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
 
 
     <title>Bootstrap - Button Demo</title>
@@ -17,140 +17,335 @@
 </head>
 
 <body>
+    <% include /src/include/header.ejs %>
 
 
-
-    <main id="lms-page-index">
-        <div class="container">
-            <% include /src/include/header.ejs %>
-                <div class="row animated fadeInRight">
-                    <div class="col-md-12">
-                        <div class="hd-title">
-                            <h3> Animated Css Exmaple</h3>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="animated-box animated bounce">
-                            <h4>bounce</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales sem diam, id consequat lectus eleifend quis. Etiam in risus efficitur, vestibulum velit sit amet, finibus augue. Donec non vulputate elit. Nulla ac pretium
-                                neque.
+        <main id="ri-page-aboutus">
+            <div class="ri-banner">
+                <div class="container">
+                    <div class="row pt-5">
+                        <div class="col-md-6 ri-bannertext">
+                            <h1>RIDE FOR <span>SURE</span></h1>
+                            <p class="ri-mobapp">Mobile App</p>
+                            <p class="ri-down">Downlaod the Ride for Sure voucher app free! Say Goodbye to paper vouchers</p>
+                            <p class="ri-downmany">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
                             </p>
+                            <button class="btn btn-primary ri-appbtn" type="submit">Download on<span>App Stores</span></button>
+                            <button class="btn btn-primary ri-appbtnand" type="submit">Download on<span>App Stores</span></button>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="animated-box animated bounceInLeft">
-                            <h4>animated bounceInLeft</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales sem diam, id consequat lectus eleifend quis. Etiam in risus efficitur, vestibulum velit sit amet, finibus augue. Donec non vulputate elit. Nulla ac pretium
-                                neque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="animated-box animated flash">
-                            <h4>flash</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales sem diam, id consequat lectus eleifend quis. Etiam in risus efficitur, vestibulum velit sit amet, finibus augue. Donec non vulputate elit. Nulla ac pretium
-                                neque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="animated-box animated rubberBand">
-                            <h4>flash</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales sem diam, id consequat lectus eleifend quis. Etiam in risus efficitur, vestibulum velit sit amet, finibus augue. Donec non vulputate elit. Nulla ac pretium
-                                neque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="animated-box animated swing">
-                            <h4>swing</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales sem diam, id consequat lectus eleifend quis. Etiam in risus efficitur, vestibulum velit sit amet, finibus augue. Donec non vulputate elit. Nulla ac pretium
-                                neque.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="animated-box animated tada">
-                            <h4>tada</h4>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales sem diam, id consequat lectus eleifend quis. Etiam in risus efficitur, vestibulum velit sit amet, finibus augue. Donec non vulputate elit. Nulla ac pretium
-                                neque.
-                            </p>
+                        <div class="col-md-6 ri-bannerimg">
+                            <img src="img/mobile.png" />
                         </div>
                     </div>
                 </div>
-                <div class="row animated fadeInRight">
-                    <div class="col-md-12">
-                        <div class="hd-title">
-                            <h3>Sweet Alert Exmaple</h3>
+            </div>
+            <div class="ri-features">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <h2>Features</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Powerful, Scalable & Demanding taxi/cab booking app with complete features. It is build with powerful infrastructure and based on GPS for route tracking. This can support any number of drivers.</p>
+                        </div>
+                    </div>
+                    <div class="row ri-fealine">
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/tracking.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Realtime GPS Tracking</h3>
+                                    <p>Powerful & highly customised Realtime GPS Tracking algorithm using Kalman Filter and Gyro Api's</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/splash.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Splash Screen</h3>
+                                    <p>User & Driver Applications will display splash screen for few secounds and then accompanied by stylish animation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/Verification.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Account Verification</h3>
+                                    <p>User & Driver app will need to verify their Mobile Number via OTP received in SMS, app will read sms automaticallyn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ri-fealine">
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/login.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Login & Registration</h3>
+                                    <p>User & Driver can login using email address and password which they choose during signup proccess.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/book.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Book A Trip</h3>
+                                    <p>Rider will enter the Pickup Location & drop location using auto-complete or manually drag & pin them on the Map.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/application.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Application Slide Menu</h3>
+                                    <p>User can access features of the User App & driver can access his Trips Statistics, Manage Vehicles & documents.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ri-fealine">
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/driver-get.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Driver Get Online</h3>
+                                    <p>Driver has to turn on ON-Duty switch on the App to accept the rides ,This is how he is getting online.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/rider.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Rider</h3>
+                                    <p>Once the confirm booking button has been pressed by rider then will show waiting to user until any driver accept.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/Driver Copy.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Driver</h3>
+                                    <p>First Driver in the range of 5 Km's will receive a notification on their mobile using push notification.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ri-fealine">
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/invoice.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Invoice Summary</h3>
+                                    <p>Once driver slide Trip complete button he is redirected to statistics and user will see ride summary on screen.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/review.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Review & Rating</h3>
+                                    <p>Rider can provide feedback for Driver for each Ride. All feedbacks will be shown on driver's Review & Rating</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/edit-profile.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Edit Profile</h3>
+                                    <p>User & Driver both can manage their profile details like Photo, Name, Email Address, Mobile number & Other</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ri-fealine">
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/booking-history.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Booking History</h3>
+                                    <p>Riders & Drivers get a view of their past trip with detail and also route on map and can filter bookings.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="ri-feabox">
+                                <div class="ri-feaimg">
+                                    <img src="img/driver-app-manage.svg">
+                                </div>
+                                <div class="ri-featext">
+                                    <h3>Driver App Manage</h3>
+                                    <p>Driver can also manage details of their vehicles & documents, vehicle listed using number plate & car type</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="sweetalert">
-                            <button class="btn btn-info hello">Click here </button>
+            </div>
+            <div class="ri-downsec">
+                <div class="container">
+                    <div class="ridownsecbtn">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2>Download My App</h2>
+                                <p>Checkout bellow our live demo on google play store and admin panel demo</p>
+                            </div>
+                        </div>
+                        <div class="row ri-downappline text-center">
+                            <div class="col-md-3">
+                                <div class="ri-downappbox">
+                                    <h3>User App</h3>
+                                    <p>Click bellow google play button to check user taxi/cab app on google play store.</p>
+
+                                    <button class="btn btn-primary ri-appbtn" type="submit">Download on<span>App Stores</span></button>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="ri-downappbox">
+                                    <h3>Driver App</h3>
+                                    <p>Click bellow google play button to check user taxi/cab app on google play store.</p>
+
+                                    <button class="btn btn-primary ri-appbtn" type="submit">Download on<span>App Stores</span></button>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="ri-downappbox">
+                                    <h3>User App</h3>
+                                    <p>Click bellow google play button to check user taxi/cab app on google play store.</p>
+
+                                    <button class="btn btn-primary ri-appbtnand" type="submit">Download on<span>App Stores</span></button>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="ri-downappbox">
+                                    <h3>Driver App</h3>
+                                    <p>Click bellow google play button to check user taxi/cab app on google play store.</p>
+
+                                    <button class="btn btn-primary ri-appbtnand" type="submit">Download on<span>App Stores</span></button>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="sweetalert">
-                            <button class="btn btn-info promises">Promises </button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="sweetalert">
-                            <button class="btn btn-info sure">Are  you sure </button>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="sweetalert">
-                            <button class="btn btn-info delete-account">Good job </button>
+                    <div class="ri-formsec">
+                        <div class="row">
+                            <div class="col-md-6 ri-formtext">
+                                <h2>Admin Panel</h2>
+                                <p>Admin Login</p>
+                                <p>User: admin | Pass: demo</p>
+                            </div>
+                            <div class="col-md-6 ri-formgroup">
+                                <form>
+                                    <input type="email" class="form-control ri-username" id="inputEmail4" placeholder="Username">
+                                    <input type="password" class="form-control ri-password" id="inputPassword4" placeholder="Password">
+                                    <button type="button" class="btn btn-primary booknow">Login</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </div>
-    </main>
+            </div>
+            <div class="ri-slidersec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 ri-slietext">
+                            <h1>Never Miss a deal. Let’s Go.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <div class="ri-addsign">
+                                <input type="email" class="form-control ri-address" id="inputEmail4" placeholder="Enter your Email Address….">
+                                <button type="button" class="btn btn-primary booknow">Sign Up</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ri-swipper">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="../img/blackcar.png"></div>
+                                        <div class="swiper-slide"><img src="../img/blackcar.png"></div>
+                                        <div class="swiper-slide"><img src="../img/blackcar.png"></div>
+                                        <div class="swiper-slide"><img src="../img/blackcar.png"></div>
+                                        <div class="swiper-slide"><img src="../img/blackcar.png"></div>
 
-    <% include /src/include/footer.ejs %>
+                                    </div>
+                                    <!-- Add Arrows -->
 
-        <% include /src/include/scripts.ejs %>
-            <script>
-                $('button.hello').click(function(e) {
-                    swal("Hello world!");
-                });
+                                </div>
+                                <div class="swiper-button-next">PREV</div>
+                                <div class="swiper-button-prev">NEXT</div>
 
-                $('button.delete-account').click(function(e) {
-                    swal("Good job!", "You clicked the button!", "success");
-                });
+                            </div>
 
-                $('button.promises').click(function(e) {
-                    swal("Click on either the button or outside the modal.")
-                        .then((value) => {
-                            swal(`The returned value is: ${value}`);
-                        });
-                });
 
-                $('button.sure').click(function(e) {
-                    swal({
-                            title: "Are you sure?",
-                            text: "Once deleted, you will not be able to recover this imaginary file!",
-                            icon: "warning",
-                            buttons: true,
-                            dangerMode: true,
-                        })
-                        .then((willDelete) => {
-                            if (willDelete) {
-                                swal("Poof! Your imaginary file has been deleted!", {
-                                    icon: "success",
-                                });
-                            } else {
-                                swal("Your imaginary file is safe!");
-                            }
-                        });
-                });
-            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <% include /src/include/footer.ejs %>
+
+            <% include /src/include/scripts.ejs %>
+
+                <script src="/dist/js/swiper.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                </script>
 </body>
 
 </html>

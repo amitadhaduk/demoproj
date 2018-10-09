@@ -7,9 +7,12 @@
 // @import "cover";
 @import "include/header.scss";
 @import "include/footer.scss";
-
 @import "index";
 @import "font-awesome";
 @import "about";
 @import "datatable";
 @import "contact-us";
+@import "common.scss";
+body {
+    font-family: 'Catamaran';
+}

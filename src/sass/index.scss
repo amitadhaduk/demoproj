@@ -1,25 +1,305 @@
-#lms-page-index {
-
+#ri-page-aboutus {
     p {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 25px;
+        color: #8B8B8B;
+        font-weight: lighter;
         //576
         @include media-breakpoint-up(sm) {
-            font-size: 15px;
+            font-size: 14px;
         }
         //768
         @include media-breakpoint-up(md) {
-            font-size: 16px;
+            font-size: 15px;
         }
         //992
         @include media-breakpoint-up(lg) {
-            font-size: 17px;
+            font-size: 15px;
+        }
+        //1200
+        @include media-breakpoint-up(xl) {
+            font-size: 15px;
+        }
+        // span {
+        //     background-color: $primary;
+        // }
+    }
+    h3 {
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+        @include media-breakpoint-up(lg) {
+            font-size: 18px;
         }
         //1200
         @include media-breakpoint-up(xl) {
             font-size: 18px;
         }
-        // span {
-        //     background-color: $primary;
-        // }
+    }
+    .ri-appbtn {
+        background: #000 url("../img/apple\ copy\ 2.svg") no-repeat;
+        border: none;
+        padding-left: 55px;
+        background-position: left 15px center;
+        font-size: 12px;
+        font-weight: 100;
+        &:hover {
+            background: #0891B3 url("../img/apple\ copy\ 2.svg") no-repeat;
+            border: none;
+            padding-left: 55px;
+            background-position: left 15px center;
+            font-size: 12px;
+            font-weight: 100;
+        }
+        span {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    .ri-appbtnand {
+        background: #000 url("../img/google-play\ copy\ 3.svg") no-repeat;
+        border: none;
+        padding-left: 55px;
+        background-position: left 15px center;
+        font-size: 12px;
+        font-weight: 100;
+        &:hover {
+            background: #0891B3 url("../img/google-play\ copy\ 3.svg") no-repeat;
+            border: none;
+            padding-left: 55px;
+            background-position: left 15px center;
+            font-size: 12px;
+            font-weight: 100;
+        }
+        span {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    .ri-banner {
+        background: url('../img/banner-img.png');
+        background-size: cover;
+        .ri-bannertext {
+            h1 {
+                padding-top: 100px;
+                font-size: 45px;
+                color: #3F3F3F;
+                line-height: 0.3;
+                @include media-breakpoint-up(sm) {
+                    font-size: 45px;
+                }
+                @include media-breakpoint-up(md) {
+                    font-size: 47px;
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 65px;
+                }
+                span {
+                    color: $blue;
+                }
+            }
+            .ri-mobapp {
+                font-size: 30px;
+                letter-spacing: -2px;
+                font-weight: 500;
+                @include media-breakpoint-up(sm) {
+                    font-size: 30px;
+                }
+                @include media-breakpoint-up(md) {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+            }
+            .ri-down {
+                color: #8B8B8B;
+                font-size: 17px;
+                letter-spacing: -1.11px;
+                @include media-breakpoint-up(sm) {
+                    font-size: 17px;
+                }
+                @include media-breakpoint-up(md) {
+                    font-size: 15px;
+                }
+                @include media-breakpoint-up(lg) {
+                    font-size: 15px;
+                }
+            }
+            .ri-downmany {
+                color: #8B8B8B;
+                font-size: 15px;
+            }
+        }
+        .ri-bannerimg {
+            text-align: center;
+            @include media-breakpoint-up(sm) {}
+            @include media-breakpoint-up(md) {
+                padding-left: 80px;
+            }
+            @include media-breakpoint-up(lg) {
+                padding-left: 80px;
+            }
+            img {
+                height: 470px;
+                @include media-breakpoint-up(sm) {}
+                @include media-breakpoint-up(md) {
+                    height: 568px;
+                }
+                @include media-breakpoint-up(lg) {
+                    height: 568px;
+                }
+            }
+        }
+    }
+    .ri-features {
+        padding: 100px 0px;
+        .ri-fealine {
+            .ri-feabox {
+                display: flex;
+                padding-top: 20px;
+                .ri-feaimg {
+                    border: 1px dashed #979797;
+                    border-radius: 5px;
+                    height: 66px;
+                    width: 66px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    @include media-breakpoint-up(md) {
+                        height: 76px;
+                        width: 76px;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        height: 70px;
+                        width: 70px;
+                    }
+                    img {}
+                }
+                .ri-featext {
+                    width: calc(100% - 76px);
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .ri-downsec {
+        background: #F8F8F8;
+        padding-top: 120px;
+        .ri-downappline {
+            margin-top: 30px;
+            border-bottom: 1px solid #E5E5E5;
+            padding-bottom: 60px;
+            @include media-breakpoint-up(md) {
+                margin-top: 60px;
+            }
+            .ri-downappbox {
+                margin-top: 30px;
+                p {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    .ri-formsec {
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .ri-formtext {
+            padding-top: 25px;
+        }
+        .ri-formgroup {
+            .ri-addsign {
+                display: flex;
+            }
+            .ri-username {
+                border: none;
+                color: #D1D1D1;
+                font-size: 14px;
+            }
+            .ri-password {
+                margin-top: 22px;
+                border: none;
+                color: #D1D1D1;
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .ri-slidersec {
+        margin-top: 110px;
+        margin-bottom: 85px;
+        .ri-slietext {
+            .ri-addsign {
+                display: flex;
+                .ri-address {
+                    background: #F5F5F5;
+                    border: none;
+                    color: #D1D1D1;
+                    font-size: 14px;
+                }
+                .booknow {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .ri-swipper {
+            margin-left: 15px;
+            width: 100%;
+            border: 1px solid #E8E8E8;
+            padding: 25px;
+            position: relative;
+            margin-top: 100px;
+            height: auto;
+            @include media-breakpoint-up(sm) {
+                margin-top: 0px;
+            }
+            @include media-breakpoint-up(md) {}
+            .swiper-slide {
+                img {
+                    width: 439px;
+                    @include media-breakpoint-up(sm) {
+                        margin-top: 0px;
+                    }
+                    @include media-breakpoint-up(md) {
+                        width: 100%;
+                    }
+                }
+            }
+            .swiper-button-next {
+                background: url(../img/arrow-01.svg);
+                background-repeat: no-repeat;
+                height: 5px;
+                top: 0px;
+                width: auto;
+                height: auto;
+                background-position: left center;
+                left: auto;
+                padding-left: 20px;
+                line-height: 3px;
+                right: 75px;
+            }
+            .swiper-button-prev {
+                background: url(../img/next-h-02.svg);
+                background-repeat: no-repeat;
+                height: 5px;
+                top: 0px;
+                width: auto;
+                height: auto;
+                background-position: left center;
+                left: auto;
+                padding-left: 20px;
+                line-height: 3px;
+                padding-left: 480px;
+                background-position: right 0px center;
+                left: 0px;
+                top: 0;
+                margin-top: -22px;
+                padding-right: 20px;
+            }
+        }
     }
 }
